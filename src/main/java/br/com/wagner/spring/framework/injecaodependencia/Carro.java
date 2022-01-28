@@ -1,4 +1,4 @@
-package br.com.wagner.spring.injecaodependencia;
+package br.com.wagner.spring.framework.injecaodependencia;
 
 public class Carro implements Veiculo{
 

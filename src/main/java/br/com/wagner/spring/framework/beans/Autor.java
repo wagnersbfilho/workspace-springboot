@@ -1,4 +1,4 @@
-package br.com.wagner.spring.beans;
+package br.com.wagner.spring.framework.beans;
 
 public class Autor implements IAutor {
 

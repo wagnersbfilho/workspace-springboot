@@ -1,4 +1,4 @@
-package br.com.wagner.spring.injecaodependencia;
+package br.com.wagner.spring.framework.injecaodependencia;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

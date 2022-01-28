@@ -1,4 +1,4 @@
-package br.com.wagner.spring.beans;
+package br.com.wagner.spring.framework.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,4 +1,4 @@
-package br.com.wagner.spring.ioc;
+package br.com.wagner.spring.framework.ioc;
 
 
 /**
