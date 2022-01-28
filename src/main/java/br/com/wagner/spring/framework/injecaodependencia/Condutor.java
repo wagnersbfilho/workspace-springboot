@@ -12,7 +12,7 @@ public class Condutor {
 		m.automovel();
 }
 	
-	@Autowired
+	//@Autowired //(não é necessário a partir de 4.3, somente se tiver mais de um construtor)
 	public Condutor(Veiculo obj) {
 		this.veiculo = obj;
 	}
