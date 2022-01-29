@@ -2,7 +2,7 @@ package br.com.wagner.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * <b>IMPORTANTE:</b>
@@ -12,11 +12,12 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * @author wagner
  *
  */
+@EnableFeignClients
 @SpringBootApplication
-public class DemoApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
