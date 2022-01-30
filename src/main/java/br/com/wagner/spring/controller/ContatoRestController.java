@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.wagner.spring.persistencia.Contato;
+import br.com.wagner.spring.persistencia.Endereco;
 import br.com.wagner.spring.service.ContatoService;
 
 @RestController
@@ -35,8 +36,13 @@ public class ContatoRestController {
 		return ResponseEntity.ok(contatoService.buscarPorId(id));
 	}
 
+	@GetMapping(path = { "/cep/{cep}" })
+	public ResponseEntity<Endereco> buscarCep(@PathVariable String cep) {
+		return ResponseEntity.ok(contatoService.consultarCep(cep));
+	}
+	
 	@PostMapping
-	public ResponseEntity<Contato> isnerir(@RequestBody Contato contato) {
+	public ResponseEntity<Contato> inserir(@RequestBody Contato contato) {
 		contatoService.inserir(contato);
 		return ResponseEntity.ok(contato);
 	}

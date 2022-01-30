@@ -1,8 +1,7 @@
 package br.com.wagner.spring.service;
 
-import org.springframework.stereotype.Service;
-
 import br.com.wagner.spring.persistencia.Contato;
+import br.com.wagner.spring.persistencia.Endereco;
 
 /**
  * Padrão Strategy no domínio do Contato.
@@ -10,7 +9,6 @@ import br.com.wagner.spring.persistencia.Contato;
  * @author wagne
  *
  */
-@Service
 public interface ContatoService {
 
 	Iterable<Contato> buscarTodos();
@@ -22,4 +20,6 @@ public interface ContatoService {
 	void atualizar (Long id, Contato contato);
 	
 	void deletar (Long id);
+	
+	Endereco consultarCep(String cep);
 }
